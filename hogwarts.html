@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hogwarts Assignment</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav>
+        <a class="logo" href="index.html">MARINA <span class="pink">TANCAU</span></a>
+        <ul id="nav-menu">
+            <li class="nav-item"><a class="nav-link underline" href="index.html#about">About</a></li>
+            <li class="nav-item"><a class="nav-link underline" href="index.html#myprojects">My Projects</a></li>
+            <li class="nav-item"><a class="nav-link underline" href="#contact">Contact</a></li>
+        </ul>
+        <div id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <main>
+            <section id="quickit">
+                <div class="q-text"> 
+                    <h1>Hogwarts Student List</h1>
+                    <h3>In this assignment we had to clean, sort and filter a Json file. The solution has different features, as sorting by name, filtering by different criteria and hacking the system. </h3>
+                    <button id="q-contact" class="block-button" data-link="http://mitproject.dk/kea3/hogwarts-assignment/">Check Website <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+                      </svg></button>
+                </div>
+                
+                <div class="q-div">
+                    <img class="q-img" src="laptopmockup.png" alt="q-banner">
+                </div>
+            </section>
+            <section class="about-project">
+                <div class="about-project-text"> 
+                <h1>About the project</h1>
+                <div class="linkedin-div">
+                    <a class="underline link" href="https://github.com/HopeAldred/Quickitsite">Github Repository <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+            </svg></a>
+            <p>The Hogwarts Student List is an individual project from school, in which I learned more about string methods, array methods, filtering and sorting and conditional logic.
+            <p> The assignment was to create some sort of a system, that would facilitate going through a list of student.</p>
+            <br>We were given two Json files that contained the names of all the students and the houses that they belong to, together with a ZIP file with almost all the student pictures.
+
+            The requirements were to clean the data, add some functionalities that would let the user expel students, make them prefect, add them to the inquisitorial squad and hack the system. 
+             </p>
+        </div>
+        
+    </div>
+    <img class="q-banner" src="quickit-desktopupdate.png" alt="quick-mockup"> 
+    <div class="about-project-text2">
+        <p>The first component of my code is the one that loads the json file and cleans the data. I have created three functions for this part, one that loads the data, another one that maps the objects and the other one that creates the student object and cleans it.</p>
+        <p>The second component of my code has the role of sorting and filtering the student list, by name, blood, house and status. For this part I have created several functions, used global arrays and object properties in order to obtain a curated lists of students.
+            </p>
+            <p>Another component of my code is the one where I set different conditions for choosing the Inquisitorial Squad Members. Based on the properties: house and blood, I have created a function that allows the user to select the members for the Inquisitorial squad, according with the requirements of the assignments.
+                </p>
+    </div>
+    <img class="q-banner" src="quickit-img.png" alt="quick-mockup"> 
+    <p>The last part of this assignment implied to create a "hack the system" function that makes three things happening. 
+        Once the user clicks the "Hack the system" button, my name is injected into the list of student and makes it not possible to expel me. Secondly, the blood status algorithm is randomized and no longer thrustworthy. Lastly, adding a student to the inquisitorial squad works only for a limited time.</p>
+    
+</section>
+<section id="contact">
+                <h1>Get in touch</h1>
+                <h3>If you consider that my work fits your style and if you have questions about me and my work, do no hesitate to contact me. I am eager to hear & share ideas, and to learn more each day.</h3>
+                <div class="link-footer">
+                    <a class="underline link" href="https://www.linkedin.com/in/marina-tancau">Linkedin <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-right" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"/>
+            </svg></a>
+                </div>
+            </section>
+</main>
+        <footer>
+            <hr>
+            <p>Made by Marina Tancau - 2022 - All rights reserved.</p>
+        </footer>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+        <script src="script.js"></script>
+</body>
+</html>
